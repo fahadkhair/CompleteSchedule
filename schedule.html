@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <button type="button" class="btn-add-agency" onclick="switchTab('btn-add-agency')"> Add New Agency </button>
+    <button type="button" class="btn-view-agencies" onclick="switchTab('list-agency')"> View Agencies </button>
+
+    <div id="form-add-agency"> 
+        <input type = "text" placeholder = "Agency Name" id="name">
+        <input type = "text" placeholder = "Login ID" id="login">
+        <input type = "text" placeholder = "Password" id="pass">
+        <input type = "text" placeholder = "Website" id="web">
+        <input type = "text" placeholder = "Comments" id="comment">
+        <button type="button" class="btn-add" onclick="addAgency()">Add Agency</button>
+    </div>
+
+    <div id="list-agency">
+        <table id="table"> 
+            <tr> 
+                <th>Agency Name</th>
+                <th>Login ID</th>
+                <th>Password</th>
+                <th>Website</th>
+                <th>Comments</th>
+                
+            </tr>
+        </table>
+         </div>
+
+    <script src="schedule.js"></script>
+</body>
+
+</html>
